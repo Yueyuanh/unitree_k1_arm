@@ -7,14 +7,12 @@
   </include>
 
   <!--drow start node-->
-  <node pkg="sagittarius_drawstar_and_display" type="moveit_draw_star.py" name="moveit_draw_star" ns="$(arg robot_name)">
+  <node pkg="sagittarius_drawstar_and_display" type="moveit_eye_in_hand.py" name="moveit_eye_in_hand" ns="$(arg robot_name)">
   </node>
 
- <!-- <node pkg="sagittarius_drawstar_and_display" type="moveit_draw_cali.py" name="moveit_draw_star" ns="$(arg robot_name)">
-  </node> -->
 
   <!--start script-->
-  <node pkg="sagittarius_drawstar_and_display" type="new_terminal_send_topic.sh" name="send_topic">
+  <node pkg="sagittarius_drawstar_and_display" type="new_terminal_eye_in_hand.sh" name="send_topic">
   </node>
 
 

@@ -1,0 +1,7 @@
+<launch>
+    <!-- 启动 realsense2_camera -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+
+    <!-- 启动 aruco_ros -->
+    <include file="$(find aruco_ros)/launch/single.launch"/>
+</launch>

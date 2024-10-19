@@ -10,8 +10,6 @@
   <node pkg="sagittarius_drawstar_and_display" type="moveit_draw_star.py" name="moveit_draw_star" ns="$(arg robot_name)">
   </node>
 
- <!-- <node pkg="sagittarius_drawstar_and_display" type="moveit_draw_cali.py" name="moveit_draw_star" ns="$(arg robot_name)">
-  </node> -->
 
   <!--start script-->
   <node pkg="sagittarius_drawstar_and_display" type="new_terminal_send_topic.sh" name="send_topic">
@@ -19,11 +17,5 @@
 
 
 
-  <!-- *** -->
-  <!-- realsense node -->
-  <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
-
-  <include file="$(find aruco_ros)/launch/single.launch"/>
- -->
 
 </launch>
